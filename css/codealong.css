@@ -1,0 +1,57 @@
+
+
+
+#wrapper {
+    display:grid;
+    width: 95vw;
+    border: solid 1px black;
+    grid-template-areas: 
+    'hd'
+    's1'
+    's2'
+    's3'
+    'ft';
+    grid-template-rows: 4rem 1fr 1fr 1fr 4rem;
+    min-height: 95vh;
+}
+
+header {
+    display: flex;
+    padding:1%;
+    justify-content: space-between;
+    grid-area: hd;
+    background-color: lightcoral;
+}
+
+#sect1 {
+    grid-area: s1;
+    background-color: lightpink;
+}
+#sect2 {
+    grid-area: s2;
+    background-color: paleturquoise;
+}
+#sect3 {
+    grid-area: s3;
+    background-color: thistle;
+}
+
+footer {
+    grid-area: ft;
+    background-color: mediumpurple;
+}
+
+img#logga {
+    display: block;
+    width: 40%;
+    height: 100%;
+    margin:auto;
+}
+div#hamburgare {
+    width: 10%;
+    color:white;
+}
+div#divlogga {
+    width: 90%;
+    padding-left:10%;
+}
