@@ -1,18 +1,29 @@
-
-
-
 #wrapper {
     display:grid;
     width: 95vw;
+    column-gap: 1rem;
     border: solid 1px black;
     grid-template-areas: 
+    'hd hd'
+    's1 s1' 
+    's2 s3'
+    'ft ft';
+    grid-template-rows: 4rem 1fr 1fr 4rem;
+   grid-template-columns: 1fr 1fr;
+    min-height: 95vh;
+}
+
+@media screen and (max-width: 500px) {
+    #wrapper {
+    grid-template-areas: 
     'hd'
-    's1'
+    's1' 
     's2'
     's3'
     'ft';
+    grid-template-columns: 1fr;
     grid-template-rows: 4rem 1fr 1fr 1fr 4rem;
-    min-height: 95vh;
+    } 
 }
 
 header {
@@ -26,14 +37,23 @@ header {
 #sect1 {
     grid-area: s1;
     background-color: lightpink;
+    background-image: url('../cool\ flower.jpg');
+    background-size: cover;
+    background-position: 20% 30%;
 }
 #sect2 {
     grid-area: s2;
     background-color: paleturquoise;
+    font-family: 'Mochiy Pop One', sans-serif;
+
 }
 #sect3 {
     grid-area: s3;
     background-color: thistle;
+}
+
+section {
+    padding: 1vw;
 }
 
 footer {
@@ -54,4 +74,10 @@ div#hamburgare {
 div#divlogga {
     width: 90%;
     padding-left:10%;
+}
+
+.linje {
+    width: 100%;
+    border: white solid 3px;
+    margin-bottom:0.5em;
 }

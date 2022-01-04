@@ -5,14 +5,12 @@
     min-height: 100vh;
     grid-template-areas:
     'nv'
-    'sc'
-    'ft';
-    grid-template-rows: 5rem auto 4%;
+    'sc';
+    grid-template-rows: 6rem auto 6rem;
 }
 
 body {
-    margin: 0em;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 *{
@@ -24,15 +22,17 @@ body {
 
 nav {
     grid-area: nv;
-    display: flex;
     background-color: rgb(209, 71, 71);
-   z-index: 1000;
-   box-shadow: 0px 5px 5px black;
+    display: grid;
+    place-items: start end; 
+    z-index: 1000;
+    box-shadow: 0px 5px 5px black;
+    max-height: 5rem;
 }
 
 nav ul{
     list-style-type: none;
-    margin-top: 1%;
+
 }
 
 nav ul a{
@@ -49,29 +49,12 @@ nav ul a:hover{
     color: white;
 }
 
-
-img#logga {
-    display: block;
-   width: auto;
-    height: 3rem;
-    margin-left: 4%;
-    margin-top: 12%;
-}
-
-section {
+section div img{
     grid-area: sc;
-    background-image: url("../img/bigwaffle.jpg");
-    background-position-y: 80%;
-    
-}
-    
-#waffle {
-    max-height: 80vh;
-    justify-self: center;
-}
-
-footer {
-    grid-area: ft;
-    background-color: rgb(35, 32, 70);
-    z-index: 1000;
+    background-position-y: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    max-width: 100%;
+    min-width: 100rem;
+    height: 100%;
 }

@@ -60,9 +60,8 @@ img#logga {
 
 section {
     grid-area: sc;
-    background-image: url("../img/bigwaffle.jpg");
-    background-position-y: 80%;
-    
+    background-image: url("../img/karta2.png");
+    max-width: 100%;
 }
     
 #waffle {
