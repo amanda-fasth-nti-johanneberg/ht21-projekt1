@@ -60,12 +60,12 @@ img#logga {
 
 section {
     grid-area: sc;
-    background-image: url("../img/karta2.png");
-    max-width: 100%;
+    background-image: url("../img/karta3.png");
+    background-position-y: 40%;
 }
     
 #waffle {
-    max-height: 80vh;
+    max-height: 70vh;
     justify-self: center;
 }
 
